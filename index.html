@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/4c9a75ff8a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.PNG"class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">ホーム</a></li>
+                    <li><a href="#about">私について</a></li>
+                    <li><a href="#services">プロジェクト</a></li>
+                    <li><a href="#portfolio">プロジェクトの詳細</a></li>
+                    <li><a href="#contact">連絡</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                 <p>ジュニアプログラマー</p> 
+                 <h1>はじめまして <br><span>ロペスマルコス</span>と申します</h1>
+            </div>
+        </div>
+    </div>    
+    <!---------About---------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/MarcosLopez.jpg" alt="">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="sub-title">私について</h1>
+                    <p>私はスペイン出身のロペスマルコスと申します。2019年に日本にお越しになりました。当初は日本語の学習のために参りましたが、この素晴らしい国と私のご恋人に心を奪われまして、日本においてITのキャリアを志すことを決意いたしました。私は常にプログラミングの世界において学びを深めたいとの熱い願望がございますため、日本でのITの道を進むことを選ばせていただきました。</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">スキール</p>
+                        <p class="tab-links" onclick="opentab('experience')">経験</p>
+                        <p class="tab-links" onclick="opentab('education')">学歴</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                          <li><span>ジュニアプログラマー</span> <br>  FrontEnd, BackEnd プログラミング</li>
+                          <li><span>UI/UX</span>  <br> ウェブやアップ開発</li>
+                          <li><span>ゲームプログラム</span> <br>  GDScript言語</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id ="experience">
+                        <ul>
+                          <li><span>2022-2024Java/Python/HTML/CSS/SQL/JavaScript</span>  <br>Coursera/Codeacademy</li>
+                        </ul>
+                    </div>  
+                    <div class="tab-contents" id="education">
+                        <ul> 
+                            <li><span>2022-2024ITクラウド</span> <br>大阪コンピューター専門学校</li>
+                            <li><span>2019-2021日本語勉強</span>  <br>ARC大阪日本語学校</li>
+                           <li><span>2012-2014高校卒業</span>  <br>IES Cardenal Cisneros</li>
+                            <li><span>2006-2010中学校</span>  <br>Colegio Lope de Vega</li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------Services---------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">プロジェクト</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>私は現在ご覧になっているようなウェブサイトを含むさまざまなウェブサイトを制作いたしました。</p>
+                    <a href="#">こちらのコードをご覧いただけませんでしょうか。</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Design</h2>
+                    <p>私は、HTML、JavaScript、CSS、およびCordovaソフトウェアを使用してAndroid向けのシンプルなアプリケーションを作成させていただきました。現在はReactの学習にも取り組ませていただいております。</p>
+                    <a href="#">こちらのアップをご覧いただけませんでしょうか。</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Godotゲームプログラミング</h2>
+                    <p>私はGDScriptというゲームプログラミング言語でいくつかのプロジェクト・未完了・に取り組んでまいりました。GDScriptはPythonに非常に似た言語であり、ただ楽しみながらバックエンドソフトウェアのスキルを向上させるために取り組んでおります。
+                    </p>
+                    <a href="#">こちらのプロジェクトをご覧いただけませんでしょうか。</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>AIプログラミング</h2>
+                    <p>私はTensorFlowを使用してPythonでいくつかの小規模なプログラムを作成し、直接的にAIプログラミングを体験させていただきました。
+                    </p>
+                    <a href="#">こちらのコードをご覧いただけませんでしょうか。</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------Works in Detail---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">プロジェクトの詳細</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/app.png" alt="">
+                    <div class="layer">
+                        <h3>To do List App</h3>
+                        <p>このアプリでは、その日の義務を書き、完了したら取り消し線を引くことができます</p>
+                        <a href="https://github.com/Marcoslpz11/Todoo-Andoid-Apk"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/godot4.gif" alt="">
+                    <div class="layer">
+                        <h3>Gdscript ゲーム</h3>
+                        <p>このGDscript 言語で作成された開発中のプラットフォーム ゲームです</p>
+                        <a href="https://github.com/Marcoslpz11/Platafromas"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/python IA.PNG" alt="">
+                    <div class="layer">
+                        <h3>Python AI</h3>
+                        <p>Tensorflow を使用して Python で構築されたさまざまな AI 関連プログラム</p>
+                        <a href="https://github.com/Marcoslpz11/AI-1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Marcoslpz11" class="btn">See More</a>
+        </div>
+    </div>
+</div>
+ <!---------Contact---------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i><i class="fa-solid fa-paper-plane"></i></i>lopezgmrcs@gmail.com</p>
+                <p><i><i class="fa-solid fa-phone"></i></i>08092728621</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/marcoslpzgar/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Marcoslpz11"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/MarcosLopez履歴書.pdf" download class="btn btn2">履歴書</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="名前" required>
+                    <input type="email" name="Email" placeholder="メール" required>
+                    <textarea name="Message" rows="6" placeholder="メッセージ"></textarea>
+                    <button type="submit"class="btn btn2">送る</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i><i class="fa-solid fa-copyright"></i></i>Copyright © Marcoslpz11</p>
+    </div>
+ </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+        
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-z7CHS-90MpsHLBSqU0-qH3HiQPUPYIGtK3yxLawkHPuqw1Lnml-O_OJNO6db008VQg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            })
+        },5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
